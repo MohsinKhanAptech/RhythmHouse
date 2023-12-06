@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bbno$ - mathematics</title>
+    <link rel="icon" href="../../images/favicon1.png">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <script src="../../script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header><a href="../../index.html"><img src="../../images/logo.png" alt="Rhythm house logo" title="Rhythm House - RecordStore" width="15%" class="logo"></a></header>
+    <!-- navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html"><i class="fa-solid fa-house"></i> home</a></li>
+            <li class="dropdownbtn active"><a href="../../browse.html#music"><i class="fa-solid fa-music"></i> music</a>
+                <ul class="dropdown mdh">
+                    <li class="dropdown-category">
+                        <div>Genre :</div>
+                        <ul>
+                            <li><a href="../../browse.html#urdu-music">Urdu Music</a></li>
+                            <li><a href="../../browse.html#lofi-pop">lofi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-category">
+                        <div>Age :</div>
+                        <ul>
+                            <li><a href="../../browse.html#urdu-music">adults</a></li>
+                            <li><a href="../../browse.html#lofi-pop">teens</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdownbtn"><a href="../../browse.html#movies"><i class="fa-solid fa-clapperboard"></i> movies</a>
+                <ul class="dropdown mdh">
+                    <li class="dropdown-category">
+                        <div>Genre :</div>
+                        <ul>
+                            <li><a href="../../browse.html#documentary">documentaries</a></li>
+                            <li><a href="../../browse.html#bollywood-movies">bollywood</a></li>
+                            <li><a href="../../browse.html#animated">animated</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-category">
+                        <div>Age :</div>
+                        <ul>
+                            <li><a href="../../browse.html#documentary">adults</a></li>
+                            <li><a href="../../browse.html#bollywood-movies">teens</a></li>
+                            <li><a href="../../browse.html#animated">kids</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mdh"><a href="../../browse.html"><i class="fa-regular fa-folder-open"></i> Browse</a></li>
+            <li class="dropdownbtn mdh"><a href="../../events.html"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                <ul class="dropdown">
+                    <li class="dropdown-category">
+                        <div>type :</div>
+                        <ul>
+                            <li><a href="../../events.html#concerts"> Concerts</a></li>
+                            <li><a href="../../events.html#contests"> contests</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdownbtn float-r more"><a href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+                <ul class="dropdown">
+                    <li class="mds"><a href="../../browse.html"><i class="fa-regular fa-folder-open"></i> Browse</a></li>
+                    <li class="mds"><a href="../../events.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+                    <li class="mds"><a href="../../browse.html"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                    </li>
+                    <li><a href="../../membership.html"><i class="fa-solid fa-address-card"></i> Memebrship</a></li>
+                    <li><a href="../../aboutus.html"><i class="fa-solid fa-circle-info"></i> About us</a></li>
+                    <li><a href="../../aboutus.html#contact"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
+                </ul>
+            </li>
+            <form action="../../browse.html"><li class="float-r mdh"><label for="search"><a href="../../browse.html"><i class="fa-solid fa-magnifying-glass"></i></a></label></li>
+            <li class="float-r mdh"><input type="text" placeholder="Search" name="search" id="search"></li></form>
+        </ul>
+    </nav>
+    <!-- pop-up -->
+    <div class="popup-container" id="pop-up">
+        <form method="post" class="popup bg-1 p-2em br-12px">
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-user icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-envelope icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="text" placeholder="Email" name="email" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-phone icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="tel" placeholder="Phone" name="tel" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-key icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="password" placeholder="Password" name="password" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-list icon p-1em color-0 bg-0"></i>
+                <select class="input-field p-1em" id="medium" name="medium">
+                  <option value="DVD">DVD</option>
+                  <option value="CD">CD</option>
+                  <option value="Tape">Tape</option>
+                </select>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-location-dot icon pt-2em p-1em color-0 bg-0"></i>
+                <textarea class="input-field p-1em" rows="3" placeholder="Location" name="Location" required></textarea>
+            </div>
+            <button type="submit" class="btn mt-1em br-6px">Submit</button>
+            <button onclick="cancel()" type="button" class="btn mt-1em br-6px">Cancel</button>
+        </form>
+    </div>
+    <!-- main -->
+    <div class="container">
+        <div class="row p-2em">
+            <div class="w-25 float-l">
+                <div class="p-1em bg-1 br-12px"><div class="p-1em bg-2 br-12px"><img class="br-6px" src="cover/Bbno$ - mathematics.jpg" width="100%" alt="Bbno$ - mathematics"></div>
+                    <div class="p-1em">
+                        <div class="card-title">mathematics</div>
+                        <div class="card-title color-1 fs-08em">Bbno$ - 2022</div>
+                        <div class="card-desc"><i class="fa-solid fa-eye"></i> 14,731,444 views</div>
+                        <div class="card-desc"><i class="fa-solid fa-star"></i> 5 / 5 stars</div>
+                        <div class="card-desc"><i class="fa-solid fa-heart"></i> 1,985,672 favorites</div>
+                        <button class="btn mt-1em br-6px order-btn trans" onclick="popup()">place order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-75 float-l">
+                <div class="p-2em bg-1 br-12px">
+                    <div><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3JavZqn7lRvLHbh0YZu7b5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                </div>
+                <div class="p-2em mt-1em bg-1 br-12px">
+                    <div class="title">Artists</div>
+                    <div class="desc">​bbno$</div>
+                    <div class="title">Writers</div>
+                    <div class="desc">​bbno$</div>
+                    <div class="title">Producers</div>
+                    <div class="desc">Elijah Fox, ​lophiile, Diamond Pistols & ​dwilly</div>
+                    <div class="title">Realease</div>
+                    <div class="desc">2022</div>
+                </div>
+                <div class="p-2em mt-1em bg-1 br-12px">
+                    <div class="title">Lyrics</div>
+                    <div class="desc">
+                        Flame suit, French leather and my girl bad <br>Gatekeeper say it's open, I ain't come back <br>Fifteen minutes TED talk, collecting forty racks <br>One milli' paid in tax, bitch, do the math <br>Do the math <br>Bitch, do the math <br>One milli' paid in tax, bitch, do the math <br>Do the math <br>Bitch, do the math <br>One milli' paid in tax, bitch, do the math <br> <br>Huh, did the math <br>I'm baby Johnny Cash <br>My girl gon' throw it back <br>Damn, my life a Cinemax <br>Holy hell, this smacks <br>I make hits and you make trash <br>I'm on vacay, do not ask <br>Poolside eating Apple Jacks <br>Shut up, bitch (Shut up) <br>Big deal like T.J. Maxx (Maxx) <br>Bought some cataracts <br>Watching Art Attack (Woah) <br>Nick Cage, how I act <br>Heavily dislike tax <br>Got some Asics on my feet <br>Never wear Air Max (Skr-skr) <br> <br>I'm in the cut like a wound <br>Wake your ass up, makе some room <br>And my girl coming soon <br>I don't fuck with honeymoons <br>Throw some monеy on my tomb <br>Finesse too hard, I'm feeling OOM <br>Girls love me, they want to spoon <br>Let me finish, I'll resume <br> <br>Flame suit, French leather and my girl bad <br>Gatekeeper say it's open, I ain't come back <br>Fifteen minutes TED talk, collecting fourty racks <br>One milli' paid in tax, bitch, do the math <br>Do the math <br>Bitch, do the math <br>One milli' paid in tax, bitch, do the math <br>Do the math <br>Bitch, do the math <br>One milli' paid in tax, bitch, do the math <br> <br>I just curved Cameo <br>She said I'm her Romeo (Juliet) <br>She gon’ split me up and lick me up like Oreo <br>First global book deal, sell that shit to Indigo <br>Getting money since I was an itty-bitty embryo <br>Save my money but I die for the fam <br>Always make it sail, catamaran <br>Shawty tryna play some games but I don't play Catan <br>I'm a plug, she an outlet <br>Cut out Mr. Middleman <br> <br>Yeah <br>I've got assets she wants to come see, yeah <br>Only speak the truth, hyperbole (Facts) <br>God damn, I sound good on this beat (Sheesh) <br>Extraterrestrial, E.T.​ <br> <br>Flame suit, French leather and my girl bad <br>Gatekeeper say it's open, I ain't come back <br>Fifteen minutes TED talk, collecting fourty racks <br>One milli' paid in tax, bitch, do the math <br>Do the math <br>Bitch, do the math <br>One milli' paid in tax, bitch, do the math <br>Do the math <br>Bitch, do the math <br>One milli' paid in tax, bitch, do the math <br> <br>Do the math <br>Bitch, do the math <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- suggestions -->
+    <div class="container">
+        <div class="row"><div class="row-title"><div class="row-name">recommended music</div><a href="browse.html#music" class="row-link">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+            <a href="Abdul Hannan - Bikhra.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="cover/Abdul Hannan - Bikhra.jpg" width="100%" alt="Abdul Hannan - Bikhra"></div>
+                <div class="card-title mt-05em txt-ellipsis">Bikhra</div>
+                <div class="card-title color-1 fs-08em">Abdul Hannan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="Abdul Hannan - Haaray.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="cover/Abdul Hannan - Haaray.jpg" width="100%" alt="Abdul Hannan - Haaray"></div>
+                <div class="card-title mt-05em txt-ellipsis">Haaray</div>
+                <div class="card-title color-1 fs-08em">Abdul Hannan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="Asim Azhar - Habibi.html" class="smh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="cover/Asim Azhar - Habibi.jpg" width="100%" alt="Asim Azhar - Habibi"></div>
+                <div class="card-title mt-05em txt-ellipsis">Habibi</div>
+                <div class="card-title color-1 fs-08em">Asim Azhar</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="Bayaan - Tifl.html"  class="mdh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="cover/Bayaan - Tifl.jpg" width="100%" alt="Bayaan - Tifl"></div>
+                <div class="card-title mt-05em txt-ellipsis">Tifl</div>
+                <div class="card-title color-1 fs-08em">Bayaan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="Bayaan - Faryaad.html" class="lgh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="cover/Bayaan - Faryaad.jpg" width="100%" alt="Bayaan - Faryaad"></div>
+                <div class="card-title mt-05em txt-ellipsis">Faryaad</div>
+                <div class="card-title color-1 fs-08em">Bayaan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="Bayaan - Hum Nadaan.html" class="xlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="cover/Bayaan - Hum Nadaan.jpg" width="100%" alt="Bayaan - Hum Nadaan"></div>
+                <div class="card-title mt-05em txt-ellipsis">Hum Nadaan</div>
+                <div class="card-title color-1 fs-08em">Bayaan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="Abdul Hannan - Siyah.html" class="xxlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="cover/Abdul Hannan - Siyah.jpg" width="100%" alt="Abdul Hannan - Siyah"></div>
+                <div class="card-title mt-05em txt-ellipsis">Siyah</div>
+                <div class="card-title color-1 fs-08em">Abdul Hannan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+        </div>
+        <div class="row"><div class="row-title"><div class="row-name">recommended movies</div><a href="../../browse.html#bollywood-movies" class="row-link">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+            <a href="../movies/Dasara.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="../movies/cover/Dasara.jpg" width="100%" alt="Dasara"></div>
+                <div class="card-title mt-05em txt-ellipsis">Dasara</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="../movies/Angrezi Medium.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="../movies/cover/angrezi medium.jpg" width="100%" alt="angrezi medium"></div>
+                <div class="card-title mt-05em txt-ellipsis">angrezi medium</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="../movies/Bheed.html" class="smh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="../movies/cover/bheed.jpg" width="100%" alt="bheed"></div>
+                <div class="card-title mt-05em txt-ellipsis">bheed</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="../movies/Bala.html" class="mdh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="../movies/cover/bala.jpg" width="100%" alt="bala"></div>
+                <div class="card-title mt-05em txt-ellipsis">bala</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="../movies/Bholaa.html" class="lgh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="../movies/cover/Bholaa.jpg" width="100%" alt="Bholaa"></div>
+                <div class="card-title mt-05em txt-ellipsis">Bholaa</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="../movies/Doctor G.html" class="xlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="../movies/cover/doctor G.jpg" width="100%" alt="doctor G"></div>
+                <div class="card-title mt-05em txt-ellipsis">doctor G</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="../movies/Goodbye.html" class="xxlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="../movies/cover/goodbye.jpg" width="100%" alt="goodbye"></div>
+                <div class="card-title mt-05em txt-ellipsis">goodbye</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="p-1em mt-1em">
+        <div class="container">
+            <div class="row">
+                <div class="w-75 float-l"><ul>
+                    <li class="card-title"><a href="../../index.html">home</a><a href="../../browse.html#music">Music</a><a href="../../browse.html#movies">Movies</a><a href="../../browse.html">Browse</a><a href="../../events.html">Events</a><a href="../../membership.html">Membership</a><a href="../../aboutus.html#contact">Contact</a><a href="../../aboutus.html">About</a></li>
+                    <li class="card-title mt-1em">follow us: <div class="socials"><a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a><a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa-brands fa-twitter"></i></a><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.whatsapp.com/" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a><a href="https://www.tiktok.com/" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a></div></li>
+                    <li class="card-desc mt-1em fs-08em">Support : <a href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank">rhythmhouse@support.com</a> or <a href="tel:+923000000000" target="_blank">+92 300 0000000</a></li>
+                    <li class="card-desc mt-1em fs-08em" title="Made by Team B : Mohsin Khan">rhythmhouse.com is a property of RhythmHouse Co.,Ltd. ©2069 All Rights Reserved.</li>
+                    <li class="card-desc">This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</li>
+                </ul></div>
+                <div class="w-25 float-l lgh trans"><img src="../../images/logo.png" width="100%" alt="Rhythm house logo"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
