@@ -1,4 +1,7 @@
 # RhythmHouse
+
+**THIS IS A APTECH ASSIGNMENT**
+
 Static E-Commerce for buying Movies & Music CD/DVD \
 static website using only vanilla HTML, CSS and JS \
 Aptech 1st Semester project
