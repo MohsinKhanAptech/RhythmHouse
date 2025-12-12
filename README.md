@@ -9,7 +9,7 @@ so it looks a little lacking
 
 ## Preview
 
-live demo: [mohsinkhanaptech.github.io/RhythmHouse](https://mohsinkhanaptech.github.io/RhythmHouse)
+live demo: [donatedsalt.github.io/RhythmHouse](https://donatedsalt.github.io/RhythmHouse)
 
 ## Features
 
